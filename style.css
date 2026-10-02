@@ -1,32 +1,33 @@
 /* CSS STYLES - SMART ACADEMY PORTAL */
 :root {
-    --bg-color: #f4f7fe;
+    /* SKY BLUE + TEAL GREEN MIXTURE PALETTE */
+    --bg-color: #f0fdfa;                  /* Very soft ice-aqua */
     --card-bg: #ffffff;
-    --text-color: #2b3674;
-    --text-muted: #707ebe;
-    --primary-color: #4318ff;
-    --primary-hover: #3311cc;
-    --secondary-color: #6ad2ff;
-    --accent-color: #05cd99;
-    --danger-color: #ee5d50;
-    --border-color: #e0e5f2;
-    --shadow: 0px 18px 40px rgba(112, 144, 176, 0.12);
+    --text-color: #0f3742;                /* Deep ocean teal-black */
+    --text-muted: #487885;               /* Muted slate blue-green */
+    --primary-color: #0d9488;             /* Vibrant Emerald Teal */
+    --primary-hover: #0f766e;             /* Deep Teal */
+    --secondary-color: #0284c7;           /* Sky Blue */
+    --accent-color: #10b981;              /* Emerald Green */
+    --gradient-hero: linear-gradient(135deg, #0284c7 0%, #0d9488 100%); /* Sky Blue -> Teal Green */
+    --border-color: #ccfbf1;              /* Soft mint border */
+    --shadow: 0px 18px 40px rgba(13, 148, 136, 0.12);
     --radius: 16px;
     --transition: all 0.3s ease;
 }
 
 body.dark-mode {
-    --bg-color: #0b1437;
-    --card-bg: #111c44;
-    --text-color: #ffffff;
-    --text-muted: #a3edff;
-    --primary-color: #7551ff;
-    --primary-hover: #868cbd;
-    --secondary-color: #1b255a;
-    --accent-color: #01b574;
-    --danger-color: #e31a1a;
-    --border-color: #222e5d;
-    --shadow: 0px 18px 40px rgba(0, 0, 0, 0.4);
+    --bg-color: #051923;                  /* Deep dark teal */
+    --card-bg: #0b2532;                  /* Dark slate cyan card */
+    --text-color: #f0fdfa;
+    --text-muted: #7dd3fc;               /* Sky blue muted text */
+    --primary-color: #14b8a6;             /* Bright Teal */
+    --primary-hover: #2dd4bf;
+    --secondary-color: #38bdf8;           /* Bright Sky Blue */
+    --accent-color: #34d399;              /* Bright Mint Green */
+    --gradient-hero: linear-gradient(135deg, #0369a1 0%, #0f766e 100%);
+    --border-color: #133e50;
+    --shadow: 0px 18px 40px rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -101,7 +102,7 @@ body {
 
 /* HERO SECTION */
 .hero-section {
-    background: linear-gradient(135deg, var(--primary-color), #2b00a5);
+    background: var(--gradient-hero);
     color: #ffffff;
     padding: 60px 20px;
     text-align: center;
